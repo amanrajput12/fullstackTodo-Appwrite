@@ -1,8 +1,19 @@
-# React + Vite
+# FullStack Todos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+*  Skill gain in this project
 
-Currently, two official plugins are available:
+* In this project learn how to connect database to the project for storing data in the database .
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Lean to used the request methods which reques used for which purpose like get , post , put, delete , etc
+
+* Learn to used params in the body 
+
+* Learn to integrate appwrite authentication purpose of these  is  the if  user is valid so they can perform the task
+
+*  Learn to create the model and the how to create controller for our project and how to used middleware for the additonal security of the routes 
+
+
+# Time taken to complete this project
+
+* 15 days 
+
