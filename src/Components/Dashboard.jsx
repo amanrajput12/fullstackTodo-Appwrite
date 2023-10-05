@@ -28,7 +28,7 @@ const [editItemId, setEditItemId] = useState(null);
      }
    
     const handledata =async()=>{
-        const result = await  fetch("http://localhost:8090/api/todos/create",{
+        const result = await  fetch("/api/todos/create",{
             method:"POST",
             body:JSON.stringify(data),
          headers:{
@@ -47,7 +47,7 @@ const [editItemId, setEditItemId] = useState(null);
   
 
     useEffect(()=>{
-          fetch("http://localhost:8090/api/todos",{
+          fetch("/api/todos",{
             method:"GET",
             
          headers:{
@@ -75,7 +75,7 @@ const [editItemId, setEditItemId] = useState(null);
 
     const handledelte =async(e)=>{
         console.log(e);
-        const result = await  fetch(`http://localhost:8090/api/todos/delete/${e}`,{
+        const result = await  fetch(`/api/todos/delete/${e}`,{
             method:"DELETE",
           
          headers:{
@@ -101,7 +101,7 @@ const [editItemId, setEditItemId] = useState(null);
         const id = editItemId; // Use editItemId to get the item ID
         console.log("id are", id);
       
-        const result = await fetch(`http://localhost:8090/api/todos/update/${id}`, {
+        const result = await fetch(`/api/todos/update/${id}`, {
           method: "PATCH",
           body: JSON.stringify(data),
           headers: {
@@ -122,7 +122,7 @@ const [editItemId, setEditItemId] = useState(null);
     }
     const handleLogout = async()=>{
         console.log('clicked logout');
-        const resp = await fetch('http://localhost:8090/api/users/logout', {
+        const resp = await fetch('/api/users/logout', {
             method: 'GET',
             credentials:'include',
             headers: {

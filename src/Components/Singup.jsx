@@ -20,7 +20,7 @@ const Singup = () => {
     e.preventDefault()
    
     console.log("clicked");
-      const result = await fetch("http://localhost:8090/api/users/register",{
+      const result = await fetch("/api/users/register",{
         method:"POST",
         credentials:'include',
         body:JSON.stringify(data),

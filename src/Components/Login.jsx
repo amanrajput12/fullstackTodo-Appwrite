@@ -18,7 +18,7 @@ console.log(data);
     const handlesubmit =async(e)=>{
  e.preventDefault()
 
- const result = await fetch("http://localhost:8090/api/users/login",{
+ const result = await fetch("/api/users/login",{
     method:"POST",
     credentials:'include',
     body:JSON.stringify(data),
